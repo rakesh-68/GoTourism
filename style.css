@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.head{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(rgba(22, 25, 38, 0.7), rgba(40, 28, 81, 0.7)) , url('UB3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* opacity: 0.8; */
+}
+
+#logo{
+    color: white;
+}
+
+.elem a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.elem a:hover{
+    color: rgb(172, 98, 98);
+}
+
+#navbar{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-content{
+    width: 85vw;
+}
+
+#nav-content ul{
+    display: flex;
+    justify-content: center;
+}
+
+#nav-content ul li{
+    list-style: none;
+    margin-right: 1.2em;
+    color: white;
+}
+
+#head-content{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#head-content h1{
+    font-size: 40px;
+}
+
+#head-content h3{
+    padding-top: 1.2em;
+}
+
+.first-div{
+    width: 80%;
+    margin: auto;
+    padding-top: 5em;
+    display: flex;
+
+}
+
+.first-sub-div p{
+    padding-top:  1em;
+    line-height: 1.6em;
+}
+
+#about-img img{
+    width: 400px;
+    padding-left: 1.2em;
+}
+
+.fam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+.rows{
+    display: flex;
+    /* flex-direction: column; */
+}
+
+#second{
+    margin-top: 4em;
+}
+
+#second h1{
+    text-align: center;
+}
+
+.team-col{
+    padding: 10px;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.team-col:hover{
+    box-shadow:  0 0 20px 0px rgba(109, 20, 20, 0.6);
+}
+
+.team-col h2{
+    text-align: center;
+}
+
+.team-col img{
+    padding-top: 10px;
+    width: 350px;
+    height: 150px;
+}
+
+.team-col ul{
+    padding-top: 10px;
+    list-style: none;
+}
+
+.team-col h3{
+    text-align: center;
+    padding-top: 1em;
+}
+
+h4{
+    padding-top: 1em;
+}
+
+.team-col p{
+    padding: 1em;
+}
+
+.route1-btn{
+    color: white;
+    background-color: blue;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.route1-btn:hover{
+    background-color: brown;
+    color: white;
+}
+
+#three{
+    margin-top: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: black;
+    color: white;
+}
+
+.three-contain{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.three-contain p{
+    padding-top: 1em;
+}

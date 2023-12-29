@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="head">
+      <nav id="navbar">
+        <div id="logo">
+          <h1>GoTourism</h1>
+        </div>
+        <div id="nav-content">
+          <ul>
+            <li class="elem"><a href="index.html">HOME</a></li>
+            <li class="elem"><a href="#first">ABOUT US</a></li>
+            <li class="elem"><a href="#three">CONTACT US</a></li>
+            <li class="elem"><a href="#second">PLANS</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="head-content">
+        <h1><span class="auto"></span></h1>
+        <h3>
+          We provide you the best experience to explore this historic and
+          amazing state
+        </h3>
+      </div>
+    </section>
+
+    <section id="first">
+      <div class="first-div">
+        <div class="first-sub-div">
+          <h1>ABOUT US</h1>
+          <p>
+            We GoTourism provide the best and most appropriate travel packages
+            and plans for tourist all over the world. Travelling with GoTourism
+            will make you create some beautiful memories and an absolute
+            experience. We have some incredible plans which you will visit below
+            that is designed based on the maximum user recommendation. The
+            touring options are customizable to certain extend such that you can
+            spend your valuable time accordingly.
+          </p>
+        </div>
+        <div id="about-img">
+          <img src="first.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="second">
+      <div class="second-div">
+        <h1>Best touring options</h1>
+        <div class="fam">
+          <div class="rows">
+            <div class="team-col">
+              <h2>ROUTE - 1</h2>
+              <img src="Mehrangarh_Fort_sanhita.jpg" alt="" />
+              <h3>MOUNT ABU - JODHPUR - JAIPUR</h3>
+              <h4>Duration: 1- Week</h4>
+              <p>Select the pricing option in your respective currency</p>
+              <select name="" id="curr" onchange="route1()">
+                <option value="₹20000">Indian Rupee (₹) - ₹20000</option>
+                <option value="$240">US Dollar ($) - $240</option>
+                <option value="€217">Euro (€) - €217</option>
+                <option value="£189">Pound (£) - £189</option>
+                <option value="AU$354">Australian Dollar (AU$) - AU$354</option>
+              </select>
+              <p id="displayVal"></p>
+              <button class="route1-btn" id="book1">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="fam">
+          <div class="rows">
+            <div class="team-col">
+              <h2>ROUTE - 2</h2>
+              <img src="udai.jpg" alt="" />
+              <h3>UDAIPUR - MOUNT ABU - JODHPUR - JAISALMER</h3>
+              <h4>Duration: 8 Days</h4>
+              <p>Select the pricing option in your respective currency</p>
+              <select name="" id="curr1" onchange="route2()">
+                <option value="₹25000">Indian Rupee (₹) - ₹25000</option>
+                <option value="$300">US Dollar ($) - $300</option>
+                <option value="€271">Euro (€) - €271</option>
+                <option value="£235">Pound (£) - £235</option>
+                <option value="AU$440">Australian Dollar (AU$) - AU$440</option>
+              </select>
+              <p id="displayVal1"></p>
+              <button class="route1-btn" id="book2">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="fam">
+          <div class="rows">
+            <div class="team-col">
+              <h2>ROUTE - 3</h2>
+              <img src="abu.jpg" alt="" />
+              <h3>JAIPUR - JODHPUR - UDAIPUR - MOUNT ABU</h3>
+              <h4>Duration: 8 Days</h4>
+              <p>Select the pricing option in your respective currency</p>
+              <select name="" id="curr2" onchange="route3()">
+                <option value="₹28000">Indian Rupee (₹) - ₹28000</option>
+                <option value="$336">US Dollar ($) - $336</option>
+                <option value="€304">Euro (€) - €304</option>
+                <option value="£264">Pound (£) - £264</option>
+                <option value="AU$494">Australian Dollar (AU$) - AU$494</option>
+              </select>
+              <p id="displayVal2"></p>
+              <button class="route1-btn" id="book3">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="three">
+      <div class="three-contain">
+        <h2>Contact Us</h2>
+        <p>
+          You can email your doubts and queries to the mail id:
+          abcdxyz@gmail.com
+        </p>
+        <p>Contact Number: 1234567890</p>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4a61b7bfab.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var typed = new Typed(".auto", {
+        strings: ["Welcome to the land of courage and bravery!"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+
+      function route1() {
+        var x = document.getElementById("curr").value;
+        document.getElementById("displayVal").innerHTML = x;
+      }
+
+      function route2() {
+        var y = document.getElementById("curr1").value;
+        document.getElementById("displayVal1").innerHTML = y;
+      }
+
+      function route3() {
+        var z = document.getElementById("curr2").value;
+        document.getElementById("displayVal2").innerHTML = z;
+      }
+    </script>
+  </body>
+</html>
